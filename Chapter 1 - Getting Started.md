@@ -21,7 +21,7 @@ With this guidebook, the goal is to teach you how to mod the game in the simples
 
 This guidebook goes over almost everything pertaining to Isaac modding. This includes replacing sprites, coding items, coding enemies, and much more.
 
-Contrary to the name, this guidebook is more of a technical one. It does not teach you how to sprite or how to animate. If you were planning on doing them only, this guidebook is not for you. The guidebook is split into multiple different chapter, with each chapter split into multiple different sections.
+Contrary to the name, this guidebook is more of a technical one. It does not teach you how to sprite or how to animate. If you were planning on doing them only, this guidebook is not for you. The guidebook is split into multiple different chapters, with each chapter split into multiple different sections.
 
 At the end of each chapter is a short quiz to test your knowledge. If you miss a question on the quiz, reread the chapter to figure out how you answered incorrectly so you can learn from your mistake.
 
@@ -55,7 +55,7 @@ Coming soon...
 # Useful Resources
 
 * [Binding of Isaac: Lua Docs](https://wofsauge.github.io/IsaacDocs/rep/) - The API documentation. It should be treated as the holy bible for modding.
-* [Slugcat's Repentance Modding Series](https://www.youtube.com/watch?v=rukHB48olG8&list=PLkIbky8_pFUpqAF9l7dh_YsEV-zpJ4q50) - A video series which also teaches you how to mod the game
+* [Slugcat's Repentance Modding Series](https://www.youtube.com/watch?v=rukHB48olG8&list=PLkIbky8_pFUpqAF9l7dh_YsEV-zpJ4q50) - A video series which also teaches you how to mod the game.
 
 # Quiz
 
