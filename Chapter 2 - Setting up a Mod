@@ -1,0 +1,20 @@
+# Introduction
+
+This chapter goes over how to create a mod and enable the Debug Console.
+
+>ℹ️ If you haven’t already, make sure that you have both Visual Studio Code and the Isaac Autocomplete extension installed.
+
+# Creating a Mod
+
+Creating a mod is rather simple and straightforward
+
+## Step 1 - Find the Mods Folder
+
+The first step is looking for your mods folder.
+
+If you own the game on Steam, you can find the mods folder by following these steps:
+
+1. Open the library and search for the Binding of Isaac: Rebirth
+![image](https://github.com/4grabs/Isaac-Modding-Tutorial/assets/88222543/e9514d7f-eaf5-4842-924d-ae1ed057c478)
+
+2. Right click on the game and select "Properties"
