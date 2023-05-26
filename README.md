@@ -4,4 +4,4 @@ Welcome to the Isaac Modding Guidebook repository! This repository serves as a s
 
 # Table of Contents
 
-* Chapter 1 [Introduction]()
+* [Chapter 1 - Introduction]()
