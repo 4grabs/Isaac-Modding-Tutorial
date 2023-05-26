@@ -94,7 +94,7 @@ Edit `main.lua` so that it prints out the phrases in order:
   
   ```lua
   print("Repentogon sweep begins now")
-  print("I am pro modder")
+  print("I am a pro modder")
   ```
   
 </details>
