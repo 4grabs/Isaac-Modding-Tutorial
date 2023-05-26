@@ -6,7 +6,7 @@ This chapter goes over how to create a mod and enable the Debug Console.
 
 # Creating a Mod
 
-Creating a mod is rather simple and straightforward
+Creating a mod is rather straightforward
 
 ## Step 1 - Find the Mods Folder
 
@@ -14,9 +14,9 @@ The first step is looking for your mods folder.
 
 If you own the game on Steam, you can find the mods folder by following these steps:
 
-1. Open the library and search for the Binding of Isaac: Rebirth
+1. Open the library and search for The Binding of Isaac: Rebirth
 
-2. Right click on the game and select "Properties"<br> ![image](https://i.imgur.com/A9NUMk6.png)
+2. Right-click on the game and select "Properties"<br> ![image](https://i.imgur.com/A9NUMk6.png)
 
 3. Select the "Local Files" tab and click on "Browse"<br> ![image](https://i.imgur.com/CK82Wd2.png)
 
@@ -44,13 +44,13 @@ You can see if it’s already enabled by starting a run and pressing the `~` key
 
 ## Step 1 - Close the Game
 
-Make sure the game is completely closed, otherwise the changes you make to the game's internal settings will be reverted upon launching the game.
+Make sure the game is completely closed, otherwise, the changes you make to the game's internal settings will be reverted upon launching the game.
 
 ## Step 2 - Open options.ini
 
 The `options.ini` stores the game's settings. 
 
-In order to find it, open file explorer and navigate to `C:\Users\%username%\Documents\My Games`. Then, open the `Binding of Isaac Repentance` folder. Inside, look for the file named `options.ini`.
+To find it, open file explorer and navigate to `C:\Users\%username%\Documents\My Games`. Then, open the `Binding of Isaac Repentance` folder. Inside, look for the file named `options.ini`.
 
 ## Step 3 - Enable Debug Console
 
@@ -60,6 +60,6 @@ After making the change, save your changes and launch the game. If you've done e
 
 # Quiz
 
-No quiestions for this chapter.
+No questions for this chapter.
 
 
