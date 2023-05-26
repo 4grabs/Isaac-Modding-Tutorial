@@ -7,3 +7,4 @@ Welcome to the Isaac Modding Guidebook repository! This repository serves as a s
 * [Chapter 1 - Introduction](https://github.com/4grabs/Isaac-Modding-Tutorial/blob/main/Chapter%201%20-%20Getting%20Started.md)
 * [Chapter 2 - Setting up a Mod](https://github.com/4grabs/Isaac-Modding-Tutorial/blob/main/Chapter%202%20-%20Setting%20up%20a%20Mod.md)
 * [Chapter 3 - Creating a Resource Replacement Mod](https://github.com/4grabs/Isaac-Modding-Tutorial/blob/main/Chapter%203%20-%20Creating%20a%20Resource%20Replacement%20Mod.md)
+* [Chapter 4 - Hello World!](https://github.com/4grabs/Isaac-Modding-Tutorial/blob/main/Chapter%204%20-%20Hello%20World!.md)
