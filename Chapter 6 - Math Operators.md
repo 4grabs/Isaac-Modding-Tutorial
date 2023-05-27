@@ -4,7 +4,7 @@ This chapter will go over math operators.
 
 # An Example
 
-A math operator is a symbol which performs a mathmatical operation. Here is an example of an operator being used:
+A math operator is a symbol that performs a mathematical operation. Here is an example of an operator being used:
 
 ```lua
 print(2 + 5)
@@ -19,7 +19,7 @@ local myNumber = 10
 print(myNumber + 15)
 ```
 
-This prints out `25`. In the first line, `myNumber` is being initialized with a value of 10. In the second line, the sum of `myNumber` and `15` is being printed.
+This prints out `25`. In the first line, `myNumber` is initialized with a value of 10. In the second line, the sum of `myNumber` and `15` is printed.
 
 Another example of an operator being used:
 
@@ -37,7 +37,7 @@ This prints out `7`. The first line initializes `aCoolNumber` with a value of 10
 | --- | ----------- | ----------- |
 | + | Adds two operands | 10 + 5 |
 | - | Subtracts two operands | 8 - 3 |
-| * | Mulutiplies two operands | 3 * 10 |
+| * | Multiplies two operands | 3 * 10 |
 | / | Divides two operands | 8 / 2 |
 | ^ | Raises the first operand to the power of the second operand | 2^3 |
 | % | Takes the first operand, divides it by the second operand, and returns the remainder | 10 % 3 |
@@ -125,7 +125,7 @@ print(myvariable / 2)
 
 <details>
   <summary>Solution</summary>
-  The code errors as it tries to perform an arithmitic on a nil value as there is no variable named `myvariable`
+  The code errors as it tries to perform an arithmetic on a nil value as there is no variable named `myvariable`
 </details>
 
 #7. What does this print out?
