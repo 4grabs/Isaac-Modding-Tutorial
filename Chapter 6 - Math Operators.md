@@ -42,7 +42,7 @@ This prints out `7`. The first line initializes `aCoolNumber` with a value of 10
 | // | Divides two operands and rounds down the quotient | 10 // 3 | 3 |
 | ^ | Raises the first operand to the power of the second operand | 2^3 | 8 |
 | % | Takes the first operand, divides it by the second operand, and returns the remainder | 10 % 3 | 1 |
-| - | Negates the current operand | -6 | |
+| - | Negates the current operand | -6 | -6 |
 
 >⚠️ Be wary about dividing numbers by zero. This will return `inf` (also known as infinity), which can cause unexpected problems in your code.
 
