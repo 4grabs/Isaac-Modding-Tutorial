@@ -33,15 +33,16 @@ This prints out `7`. The first line initializes `aCoolNumber` with a value of 10
 
 # List of Math Operators
 
-| Operator | Description | Example
-| --- | ----------- | ----------- |
-| + | Adds two operands | 10 + 5 |
-| - | Subtracts two operands | 8 - 3 |
-| * | Multiplies two operands | 3 * 10 |
-| / | Divides two operands | 8 / 2 |
-| ^ | Raises the first operand to the power of the second operand | 2^3 |
-| % | Takes the first operand, divides it by the second operand, and returns the remainder | 10 % 3 |
-| - | Negates the current operand | -6 |
+| Operator | Description | Example | Result
+| --- | ----------- | ----------- | --- |
+| + | Adds two operands | 10 + 5 | 15 |
+| - | Subtracts two operands | 8 - 3 | 5 |
+| * | Multiplies two operands | 3 * 10 | 30 |
+| / | Divides two operands | 8 / 2 | 4 |
+| // | Divides two operands and rounds down the quotient | 10 // 3 | 3 |
+| ^ | Raises the first operand to the power of the second operand | 2^3 | 8 |
+| % | Takes the first operand, divides it by the second operand, and returns the remainder | 10 % 3 | 1 |
+| - | Negates the current operand | -6 | |
 
 >⚠️ Be wary about dividing numbers by zero. This will return `inf` (also known as infinity), which can cause unexpected problems in your code.
 
