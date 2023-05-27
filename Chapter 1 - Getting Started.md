@@ -46,7 +46,15 @@ To get started with modding, you only need two things:
    * [ZeroBrane Studio](https://studio.zerobrane.com/)
    * [Notepad++](https://notepad-plus-plus.org/downloads/)
 
-> ✨ It is highly reccomended to go with Visual Studio Code due to its powerful tooling as well as an [amazing extension](https://marketplace.visualstudio.com/items?itemName=Filloax.isaac-lua-api-vscode) which provides autocomplete and some linting. This guidebook will assume you are using Visual Studio Code, although it still possible to follow along if you go with another IDE.
+> ✨ It is highly reccomended to go with Visual Studio Code due to its powerful tooling as well as powerful extensions which can make your job with coding easier. This guidebook will assume you are using Visual Studio Code, although it still possible to follow along if you go with another IDE.
+
+# ✨ Recommended Visual Studio Code extensions
+
+If you are using Microsoft's Visual Studio Code, here are some extensions I would recommend:
+
+* [Binding of Isaac Lua API](https://marketplace.visualstudio.com/items?itemName=Filloax.isaac-lua-api-vscode) - Provides autocomplete support for the API. It also installs Sumneko's Lua LSP which provides (linting)[https://www.perforce.com/blog/qac/what-lint-code-and-what-linting-and-why-linting-important] and type annotation support.
+* [StyLua](https://marketplace.visualstudio.com/items?itemName=JohnnyMorganz.stylua) - An opinionated code formatter for Lua which enforces a consistent code style.
+* [Red Solitude](https://marketplace.visualstudio.com/items?itemName=MajorEnkidu.red-solitude) - A beautiful theme for your IDE :p 
 
 # Frequently Asked Questions
 
