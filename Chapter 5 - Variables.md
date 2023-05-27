@@ -159,7 +159,7 @@ local two*two = 4
 
 Variable names also can not include spaces. However, you can use underscores to emulate spaces.
 
-❌ **Incorrect*
+❌ **Incorrect**
 
 ```lua
 local a cool string = "wow a cool string"
@@ -199,7 +199,7 @@ Lua has a set of keywords that are reserved for Lua, meaning they can not be use
 * `until`
 * `while`
 
-❌ **Incorrect*
+❌ **Incorrect**
 
 ```lua
 local repeat = 5
