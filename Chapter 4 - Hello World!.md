@@ -1,100 +1,330 @@
 # Introduction
 
-This chapter goes over how to print text to the debug console and reloading mods.
+This chapter goes over the basics of variables.
 
-# Introduction
+# Variables
 
-Lua is a lightweight programming language that the Isaac modding API uses. Fortunately, compared to many coding languages out there, Lua is considered to be one of the easiest to learn.
+**Variables** are named objects which store data. The data stored can be all types of data and can be accessed in your code. 
 
-# Creating the Lua File
+If you took pre-algebra, you may already be familiar with the concept of variables (i.e: `f(x) = x + 5`). In terms of coding, variables serve the same purpose although you can change their value at any time.
 
-Inside your mod folder, create a file and name it `main.lua`.
+# Declaring a variable
 
-A Lua file is where all of the coding magic happens. `main.lua` is, as the name implies, the main Lua file for the mod and is ran when the game starts. Every mod that requires coding will need a `main.lua` file as giving it any other name will cause it to not run.
+In Lua, declaring a variable is very straightforward. In `main.lua`, paste the following code:
 
-# Opening the Mod in an IDE
+```lua
+local myVariable = 5
+print(myVariable)
+```
 
-After creating `main.lua`, you will need to open the mod's folder in your IDE. If you selected Visual Studio Code, you can open the mod by doing the following steps:
+Afterward, save the file and reload your mod. You will notice that the number `5` is printed out in the console.
 
-1. Go to the top left corner of the window and click on "File"
-2. Click on "Open Folder"
-3. Look for the folder of your mod and select it
-4. Click on "Select Folder"
+Let’s take a step back and analyze the anatomy of this code.
 
-Afterwards, you should see something like this
+The first line initializes the variable. There are four different parts of this line to note:
+- `local` signifies that the variable is **local**. In a later chapter, we will go in-depth on what a local variable does exactly as well as what happens when you remove it. However, you should almost always specify the variable as local.
+- `myVariable` is the variable **identifier**, the name of the variable.
+- `=` is the **assignment operator**. This tells the program that a value is going to be assigned to the variable. The assignment operator is used when a value is being assigned to something.
+- `5` is the **value** that is assigned to the variable.
 
-![](https://i.imgur.com/EAwGyj1.png)
+The second line of code prints out the value of the variable. Since it was initialized with a value of `5`, running the code will print out the number `5`.
 
->ℹ️ You might see other files created such as `.vscode` and `.luarc.json` (if you have the Autofill extension). You can ignore them for now.
+You can also change the value of a variable. For example:
 
-Select the `main.lua` file on the side and the IDE will open it. You can now get started with coding!
+```lua
+local myVariable  = 90
+myVariable = 30
+print(myVariable)
+```
 
-# Hello World!
+Running this code will cause the number `30` to be printed out. This is because the first line initializes the variable with a value of `90`, then the second line changes the value of the variable to `30`, and then the third line prints out the current value.
 
-It's time to write our first snippet of code. Paste the following snippet inside of the file:
+# Data Types
+
+A **data type** (or **type** for short) specifies the type of value that is being stored. Lua offers a small handful of data types you should be wary of. In this chapter, we will be going over three of them:
+
+# Number
+
+A **number** is, as the name implies, a number. In the earlier example with variables you can see the type of value being assigned to the variable is a number.
+
+There are plenty of ways to write a number. You can write one as a decimal:
+
+```lua
+local myNumber = 51.2
+local anotherNumber = 9.301
+local anAwesomeNumber = 0.031
+```
+
+And you can also have a number be negative
+
+```lua
+local myNegativeNumber = -32
+local anotherNegativeNumber = -7.3
+local coolNegativeNumber = -0.6
+```
+
+# String
+
+A **string** is a set of characters. If you recall in the previous chapter, we ran the following snippet of code:
 
 ```lua
 print("Hello World!")
 ```
 
-Do not worry if you do not understand what this does yet, we will go over it shortly.
+The `"Hello World!"` is an example of a string.
 
-After pasting it in, save the file by pressing the `ctrl` and `s` keys at the same time or by going to `File > Save`.
-
-# Testing It
-
-To test if it works, launch the game and start a new run. Open the debug console and you should see the following
-
-![image](https://github.com/4grabs/Isaac-Modding-Tutorial/assets/88222543/41167f8e-ac0c-4d3a-a2ac-91d85b0ff580)
-
-Congratulations, you ran your first piece of code!
-
->ℹ️ If you do not see the text, make sure that you saved the changes you made on `main.lua`. If there is a lot of text being printed out by other mods you have enabled, you can scroll through the console by pressing the `Pg Up` and `Pg Down` keys. If you still can't see the text, make sure you named your Lua file `main`.
-
-# A Look at Print
-
-`print` is one of the many built-in functions that Lua offers. As its name implies, `print` simply prints out text to the debug console, which can be quite useful when debugging your mods. You can use this function to print out almost anything.
-
-# Changing your Lua Script & Reloading your Mod
-
-When you add or change a resource such as sprites, you need to restart the game so it can be detected. Fortunately, this is not the case with Lua files.
-
-To demonstrate this, open `main.lua` back up and change the "Hello World!" text to anything of your liking.
-
->⚠️ Make sure you keep in the two quotation marks! If you remove them or put your text outside of them, your mod will error. We will go over why this is required in a later chapter.
-
-Once you make these changes, save your file and then open up the debug console. Inside, type `luamod` followed by the name of your mod's folder. For example, if you named the folder "Tutorial Mod", you would need to type in `luamod Tutorial Mod`. After running the command, you will see the new text appear in the debug console.
-
-`luamod` is a very useful command when coding your mod as it reloads your mod and allows your Lua files to run once again.
-
-# How Code is Ran
-
-When the game runs your code, it will start running it from top to bottom. For example, if your code looked like this:
+In Lua, there are three different ways to create a string:
 
 ```lua
-print("Hello World!")
-print("Goodbye World!")
+local myString = "This is a string using double quotation marks!"
+local anotherString = 'An amazing string using single quotation marks'
+local finalString = [[Another string with double brackets]]
 ```
 
-It would print out "Hello World!" first and then "Goodbye World!"
+The third method of creating a string using the `[[]]` characters has a unique trait where it can span multiple lines. Take the following code for example:
+
+```lua
+local aLongString = "a very
+long
+long
+string
+"
+```
+
+Running this will cause an error because using strings with quotation marks can only be in a single line of code. However, you can have strings take up multiple lines of code using double brackets like this:
+
+```lua
+local aLongString = [[
+a super
+long
+long
+string
+]]
+```
+
+>✨ Unless your strings need to span multiple lines of code, it is recommended to use double quotation marks for your strings as that is commonly used.
+
+# nil
+
+**nil** indicates that there is no value. For example,
+
+```lua
+local myVariable = nil
+print(myVariable)
+```
+
+This will print out `nil` since we're initializing a variable with no value.
+
+You can also do
+
+```lua
+local myVariable
+print(myVariable)
+```
+
+Which also initializes myVariable with no value.
+
+# Variable Naming Rules
+
+As you can already tell, you can give a variable a unique name. However, there are some rules you need to follow when naming your variable, otherwise, you will run into errors.
+
+## Rule 1 - Nubmers cant be First Characters
+
+Variable names can not have numbers as its first character.
+
+❌ **Incorrect*
+
+```lua
+local 5CoolNumbers = 42069
+local 8 = 8
+```
+
+✔️ **Correct**
+
+```lua
+local aNumberWhichContains5 = 5
+local stringWith5Characters = "abcdef"
+```
+
+## Rule 2 - No Special Characters
+
+Variable names can not include special characters, such as `%`, `^`, etc.
+
+❌ **Incorrect*
+
+```lua
+local my$Savings = 55.3
+local two*two = 4
+```
+
+Variable names also can not include spaces. However, you can use underscores to emulate spaces.
+
+❌ **Incorrect*
+
+```lua
+local a cool string = "wow a cool string"
+local two plus two = 4
+```
+
+✔️ **Correct**
+
+```lua
+local a_cool_string = "wow a cool string"
+local two_plus_two = 4
+```
+
+## Rule 3 - No Reserved Keywords
+
+Lua has a set of keywords that are reserved for Lua, meaning they can not be used as names. The following keywords are
+
+* `and`
+* `end`
+* `in`
+* `repeat`
+* `break`
+* `false`
+* `local`
+* `return`
+* `do`
+* `for`
+* `nil`
+* `then`
+* `else`
+* `function`
+* `not`
+* `true`
+* `elseif`
+* `if`
+* `or`
+* `until`
+* `while`
+
+❌ **Incorrect*
+
+```lua
+local repeat = 5
+local function = 8
+```
+## Rule 4 - Variables are Case Sensitive
+
+Variable names are case-sensitive. For example:
+
+```lua
+local myVariable = 5
+print(myvariable)
+```
+
+This will print `nil`. That is because the variable initialized is `myVariable`, yet we're printing `myvariable`. Since there was no variable declared with the name of `myvariable`, it prints out nil.
+
+## Rule 5 - Variable Names Matter!
+
+When giving a name to your variable, it should make logical sense. 
+
+Let's say we have a variable that is used to assign health to an enemy. 
+
+```lua
+local eh = 900
+```
+
+`eh` is not clear and to the reader, it does not indicate it's used to specify how much health an enemy has.
+
+```lua
+local enemyHealth = 900
+```
+
+The name of this variable is a lot more clear and tells the reader that it's used to assign health to an enemy.
+
+By giving variables good names, you will have an easier time remembering your code as well as allowing other people to read & work with your code without giving them headaches.
+
+# Multiple Variables in One Line
+
+In Lua, you can declare multiple variables in a single line. For example:
+
+```lua
+local a, b, c = 10, 5, 3
+print(a)
+print(b)
+print(c)
+```
+
+This initializes three local variables, `a`, `b` and `c`, and gives them a value of `10`, `5`, and `3` respectively.
+
+>✨ It is a good idea to avoid multiple variables in a single line as it may make your code harder to read.
 
 # Conclusion
 
-Congratulations, you learned how to print text to the console. The next few chapters will go over all of the important stuff that Lua offers. After that, we can finally get into modding new content for the game.
+That was quite a lot! However, you should have hopefully learned one of the most important things in not just Lua, but coding as a whole.
 
 # Quiz
 
-Edit `main.lua` so that it prints out the phrases in order:
+This one's going to be quite long!
 
-1. "Repentogon sweep begins now"
-2. "I am a pro modder"
+#1. Write a piece of code which does the following:
+   * Initializes a variable named `foo` with a value of 5
+   * Prints out the value of the variable
 
 <details>
   <summary>Solution</summary>
   
   ```lua
-  print("Repentogon sweep begins now")
-  print("I am a pro modder")
+  local foo = 5
+  print(foo)
   ```
   
 </details>
+
+#2. What does this piece of code print out?
+
+```lua
+local myVariable = "foo"
+print(myVariable)
+```
+
+<details>
+  <summary>Solution</summary>
+  foo
+</details>
+
+#3. What does this piece of code print out?
+
+```lua
+local myVariable = "baz"
+myVariable = 100
+print(myVariable)
+```
+
+<details>
+  <summary>Solution</summary>
+  100
+</details>
+
+#4. Which variable name is unacceptable?:
+
+   * aCoolVariableName100
+   * an amazing variable
+   * one_variable
+
+<details>
+  <summary>Solution</summary>
+  an amazing Variable
+</details>
+
+#5. So far, this chapter went over three data types (`string`, `nil`, and `number`). What data type would make the most sense when we want to assign a name to the player?
+
+<details>
+  <summary>Solution</summary>
+  string
+</details>
+
+#6. What does this piece of code print out?
+
+```lua
+print(myVariable)
+local myVariable = 100
+```
+
+<details>
+  <summary>Solution</summary>
+  `nil`. That is because we're printing out a variable that has not been initialized yet, which is `nil`. The variable is initialized after the code tries printing.
+</details>
+
