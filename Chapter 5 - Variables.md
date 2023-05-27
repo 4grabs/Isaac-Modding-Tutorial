@@ -132,7 +132,7 @@ As you can already tell, you can give a variable a unique name. However, there a
 
 Variable names can not have numbers as its first character.
 
-❌ **Incorrect*
+❌ **Incorrect**
 
 ```lua
 local 5CoolNumbers = 42069
@@ -150,7 +150,7 @@ local stringWith5Characters = "abcdef"
 
 Variable names can not include special characters, such as `%`, `^`, etc.
 
-❌ **Incorrect*
+❌ **Incorrect**
 
 ```lua
 local my$Savings = 55.3
