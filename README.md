@@ -10,3 +10,4 @@ Welcome to the Isaac Modding Guidebook repository! This repository serves as a s
 * [Chapter 4 - Hello World!](https://github.com/4grabs/Isaac-Modding-Tutorial/blob/main/Chapter%204%20-%20Hello%20World!.md)
 * [Chapter 5 - Variables](https://github.com/4grabs/Isaac-Modding-Tutorial/blob/main/Chapter%205%20-%20Variables.md)
 * [Chapter 6 - Math Operators](https://github.com/4grabs/Isaac-Modding-Tutorial/blob/main/Chapter%206%20-%20Math%20Operators.md)
+* [Chapter 7 - Conditionals](https://github.com/4grabs/Isaac-Modding-Tutorial/blob/main/Chapter%207%20-%20Conditionals.md)
