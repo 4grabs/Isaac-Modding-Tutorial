@@ -58,8 +58,5 @@ Open the `options.ini` file. Inside, look for the line which says `EnableDebugCo
 
 After making the change, save your changes and launch the game. If you've done everything correctly, the debug console should now appear when pressing the `~` key in a run.
 
-# Quiz
-
-No questions for this chapter.
 
 
