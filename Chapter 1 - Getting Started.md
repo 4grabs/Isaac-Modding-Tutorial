@@ -62,6 +62,7 @@ Coming soon
 
 # Useful Resources
 
+* [Learn Visual Studio Code in 7min](https://www.youtube.com/watch?v=B-s71n0dHUk) - A quick introduction to Visual Studio Code.
 * [Binding of Isaac: Lua Docs](https://wofsauge.github.io/IsaacDocs/rep/) - The API documentation. It should be treated as the holy bible for modding.
 * [Slugcat's Repentance Modding Series](https://www.youtube.com/watch?v=rukHB48olG8&list=PLkIbky8_pFUpqAF9l7dh_YsEV-zpJ4q50) - A video series which also teaches you how to mod the game.
 * [AgentCucco's Modding Series](https://www.youtube.com/playlist?list=PLUYzSIp7NO8cEer2FmtxSXlXoMFirvYDN) - A video series which covers Lua, an introduction to the game's animation editor, and a basic introduction to the modding API. Although this was made during the AB+ era, the material taught in this playlist still transfer well to Repentance.
