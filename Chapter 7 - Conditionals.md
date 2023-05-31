@@ -70,10 +70,10 @@ This prints `false` as the value of `myString` is not equal to `myOtherString`
 When comparing two operands with each other, both operands don't have to be the same data type if you're using the `==` operator or the `~=` operator. For example:
 
 ```lua
-print(5 == "a string")
+print(5 == "5")
 ```
 
-This will print `false` as the number `5` is not equal to the string `"a string"`.
+This will print `false` as the number `5` is not equal to the string `"5"`.
 
 However, you can not compare two different data types using any other relational operator. If you were to run this:
 
@@ -83,7 +83,33 @@ print(5 <= "5")
 
 The code will error with a message telling you that you tried to compare a number with a string.
 
-# Introduction to conditional statements
+# Relational Operator with Strings
+
+You learned that earlier it is possible to compare two strings with each other. However, what will happen if you compare them with `<`, `>`, `<=`, or `>=`?
+
+In Lua, comparing strings using these operators will compare strings in alphabetical order. For example:
+
+```lua
+local string1 = "hi"
+local string2 = "apples"
+
+print(string1 > string2)
+```
+
+This will print `true` since `"hi"` is alphabetically greater than `"apples"`.
+
+It's important to note that if two strings have the same letter as their first character but have different casing, then the string with the lower casing takes priority. For example:
+
+```lua
+local string1 = "Apples"
+local string2 = "apples"
+
+print(string1 >= string2)
+```
+
+This prints `false` as although `string1` and `string2` are the same words and have the same letter as the first character, the first character in `string2` is lowercase, therefore making `string1` not alphabetically greater or equal to `string2`.
+
+# Introduction to Conditional Statements
 
 While you're coding, there are times when you want something specific to happen only if a certain condition is met. For example, what if we only want the player to be able to use a specific item if they have enough help? This is where **conditional statements** come into play.
 
