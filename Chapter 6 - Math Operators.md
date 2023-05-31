@@ -35,16 +35,64 @@ This prints out `7`. The first line initializes `aCoolNumber` with a value of 10
 
 | Operator | Description | Example | Result
 | --- | ----------- | ----------- | --- |
-| + | Adds two operands | 10 + 5 | 15 |
-| - | Subtracts two operands | 8 - 3 | 5 |
-| * | Multiplies two operands | 3 * 10 | 30 |
-| / | Divides two operands | 8 / 2 | 4 |
-| // | Divides two operands and rounds down the quotient | 10 // 3 | 3 |
-| ^ | Raises the first operand to the power of the second operand | 2^3 | 8 |
-| % | Takes the first operand, divides it by the second operand, and returns the remainder | 10 % 3 | 1 |
-| - | Negates the current operand | -6 | -6 |
+| + | The addition operator adds two operands | 10 + 5 | 15 |
+| - | The subtraction operator sbtracts two operands | 8 - 3 | 5 |
+| * | The multiplication operator multiplies two operands | 3 * 10 | 30 |
+| / | The division operator divides two operands | 8 / 2 | 4 |
+| // | The floored division operator divides two operands and rounds down the quotient | 10 // 3 | 3 |
+| ^ | The exponent operator raises the first operand to the power of the second operand | 2^3 | 8 |
+| % | The modulo operator takes the first operand, divides it by the second operand, and returns the remainder | 10 % 3 | 1 |
+| - | The unary operator negates the current operand. This uses the same symbol as the subtraction operator. | -6 | -6 |
 
 >⚠️ Be wary about dividing numbers by zero. This will return `inf` (also known as infinity), which can cause unexpected problems in your code.
+
+# Operator Precedence
+
+When performing math operations, you aren't limited to only one operation. For example:
+
+```lua
+local finalAnswer = 5 - 1 + 3
+print(finalAnswer)
+```
+
+This prints out `7` as a result as the code first subtracts `5 - 1` and then adds `3` to the difference. 
+
+However, it's important to note that the final value is not being calculated from the left-most operator to the right-most operator. For example:
+
+```lua
+local finalAnswer = 2 + 5 * 10
+print(finalAnswer)
+```
+
+You might assume that the final answer would be 70. However, you'll instead get `52`. This is because there is a specific order in which math operations are being performed.
+
+**Operator Precedence** (or **order of operations**) is the order in which math operators are performed to calculate the final result.
+
+If you have taken any math classes, you may be familiar with the term **PEMDAS**. Operator Precedence works the same way!
+
+When an equation is being evaluated, the following operations are being evaluated in order:
+
+1. Unary - First, everything with a unary operator is evaluated. This is not to be confused with subtraction.
+2. Paranthesis - Next, everything in parenthesis is evaluated. Everything evaluated inside of parenthesis also follows the operator precedence.
+3. Exponents - Next, every term with an exponent operator is evaluated.
+4. Multiplication - Next, every operand tied to the multiplication operator is evaluated.
+5. Division - Next, every operand tied to the division operator is evaluated.
+6. Addition - Next, every operand tied to the addition operator is evaluated.
+7. Subtraction - Finally, every operand tied to the subtraction operator is evaluated.
+
+Here is an example of this in action.
+
+```lua
+local myAnswer = (10 * 2) / 5 + 1
+print(myAnswer)
+```
+
+This prints out `5`. This is because the following operations are being performed in order:
+
+1. Everything in the parentheses are being evaluated first. In this case, `10 * 2` is being evaluated. The final product is `20`. The equation can now be simplified to `20 / 5 + 1`
+2. Since a division operator is present, `20 / 5` is performed next, with the final product being `4`. The equation can now be simplified to `4 + 1`.
+3. Finally, the remaining operands are added together, which produces the final answer of `5`.
+
 
 # Conclusion
  
