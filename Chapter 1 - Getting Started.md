@@ -54,18 +54,16 @@ If you are using Microsoft's Visual Studio Code, here are some extensions I woul
 
 * [Binding of Isaac Lua API](https://marketplace.visualstudio.com/items?itemName=Filloax.isaac-lua-api-vscode) - Provides autocomplete support for the API. It also installs Sumneko's Lua LSP which provides (linting)[https://www.perforce.com/blog/qac/what-lint-code-and-what-linting-and-why-linting-important] and type annotation support.
 * [StyLua](https://marketplace.visualstudio.com/items?itemName=JohnnyMorganz.stylua) - An opinionated code formatter for Lua which enforces a consistent code style.
+* [XML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml) - Adds XML support to Visual Studio Code and allows you to use (Wofsauge's XML Validator)[https://pypi.org/project/isaac-xml-validator/]
 
 # Frequently Asked Questions
 
-Coming soon...
+Coming soon
 
 # Useful Resources
 
 * [Binding of Isaac: Lua Docs](https://wofsauge.github.io/IsaacDocs/rep/) - The API documentation. It should be treated as the holy bible for modding.
 * [Slugcat's Repentance Modding Series](https://www.youtube.com/watch?v=rukHB48olG8&list=PLkIbky8_pFUpqAF9l7dh_YsEV-zpJ4q50) - A video series which also teaches you how to mod the game.
-
-# Quiz
-
-No questions for this chapter!
+* [AgentCucco's Modding Series](https://www.youtube.com/playlist?list=PLUYzSIp7NO8cEer2FmtxSXlXoMFirvYDN) - A video series which covers Lua, an introduction to the game's animation editor, and a basic introduction to the modding API. Although this was made during the AB+ era, the material taught in this playlist still transfer well to Repentance.
 
 
