@@ -42,7 +42,7 @@ This prints out `7`. The first line initializes `aCoolNumber` with a value of 10
 | // | The floored division operator divides two operands and rounds down the quotient | 10 // 3 | 3 |
 | ^ | The exponent operator raises the first operand to the power of the second operand | 2^3 | 8 |
 | % | The modulo operator takes the first operand, divides it by the second operand, and returns the remainder | 10 % 3 | 1 |
-| - | The unary operator negates the current operand. This uses the same symbol as the subtraction operator. | -6 | -6 |
+| - | The unary minus operator inverts the sign of the operand. This uses the same symbol as the subtraction operator. | -(3-5) | 2 |
 
 >⚠️ Be wary about dividing numbers by zero. This will return `inf` (also known as infinity), which can cause unexpected problems in your code.
 
