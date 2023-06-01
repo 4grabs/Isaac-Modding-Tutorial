@@ -184,6 +184,25 @@ end
 
 This code prints out "You like apples" as a result.
 
+>✨ Conditional statements always check to see if a condition is `true`. This means the following code snippet can be simplified from:
+>```lua
+>local myVar = true
+>
+>if myVar == true then
+>   print("It's true!")
+>end
+>```
+>
+> To:
+>
+>```lua
+>local myVar = true
+>
+>if myVar then
+>   print("It's true!")
+>end
+>```
+
 # Else Statement
 
 An **else** statement is part of a conditional statement that runs only if all previous conditionals return false. Here is an example:
@@ -259,6 +278,70 @@ end
 ```
 
 This prints out "You don't have what I need". This is because while the first operand of `myFruit1 == "apple"` evaluates to true, `myFruit2 == "strawberry"` evaluates to `false`, which makes the condition `false` since the `and` operator is being used.
+
+**Operator Precedence**
+
+Just like arithmetic operators, relational operators also have an operator precedence.
+
+Relational operations are evaluated in the following order:
+
+1. Paranthesis - First, all operations inside of parenthesis are calculated while following the operator precedence.
+1. `not` - First, the `not` logical operator negates its operand.
+2. `<`/`>`/`>=`/`<=` - Next, the `<`/`>`/`>=`/`<=` operator calculates its operands.
+3. `and` - Next, the `and` operator calculates its operands
+4. `or` - Finally, the `or` operator calculates its operands.
+
+Here is an example of operator precedence being used in a conditional:
+
+```lua
+local hasApples = true
+local hasGrapes = false
+local hasBlueberries = true
+
+if (hasApples or hasGrapes) and hasBlueberries then
+   print("You have everything needed!")
+else
+   print("You don't have everything needed.")
+end
+```
+
+This prints out `"You have everything needed!"`. First, the relational operations inside of the parenthesis, `hasApples or hasGrapes`, are being evaluated. Since `hasApples` is equal to true, that portion of the conditional evaluates to true. It can now be simplified to `if true and hasBlueberries then`. Since `hasBlueberries is also equal to `true`, the entire conditional statement is evaluated to `true`. 
+
+# Nested Conditionals
+
+You can nest multiple conditionals into each other. Here is an example of a nested conditional in action:
+
+```lua
+local isRed = true
+local isBlue = false
+
+if isRed then
+    if isBlue then
+        print("It's blue and red!")
+    else
+        print("It's only red")
+    end
+else
+    print("It's not red")
+end
+
+```
+
+First, the code checks to see if `isRed` is true. Since it is, the nested conditional inside of the block can now be evaluated. Since `isBlue` is false, the code prints out `"It's not blue and red"`/
+
+>✨ Avoid nested conditional statements unless it's necessary! Nested conditional statements can make your code significantly harder to read. The code above can easily be simplified to:
+>
+>```lua
+>local isRed = true
+>local isBlue = false
+>if isRed and isBlue then
+>    print("It's blue and red!")
+>elseif isRed then
+>    print("It's only red")
+>else
+>    print("It's not red")
+>end
+```
 
 # Quiz
 
