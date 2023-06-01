@@ -11,3 +11,4 @@ Welcome to the Isaac Modding Guidebook repository! This repository serves as a s
 * [Chapter 5 - Variables](https://github.com/4grabs/Isaac-Modding-Tutorial/blob/main/Chapter%205%20-%20Variables.md)
 * [Chapter 6 - Math Operators](https://github.com/4grabs/Isaac-Modding-Tutorial/blob/main/Chapter%206%20-%20Math%20Operators.md)
 * [Chapter 7 - Conditionals](https://github.com/4grabs/Isaac-Modding-Tutorial/blob/main/Chapter%207%20-%20Conditionals.md)
+* [Chapter 8 - Loops](https://github.com/4grabs/Isaac-Modding-Tutorial/blob/main/Chapter%208%20-%20Loops.md)
