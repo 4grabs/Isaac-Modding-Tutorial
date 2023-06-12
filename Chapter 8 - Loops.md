@@ -67,6 +67,34 @@ This prints out `"The loop is running"` 6 times. Here's a look at each part of t
 * `until` - The end of the loop and the start of the condition check.
 * `myNumber <= 0` - The loop's condition. If it evaluates to `true`, the block of code ran again. Otherwise, the loop stops running.
 
+# While vs Repeat
+
+Beginners may sometimes have trouble understanding the difference between a while loop and a repeat loop.
+
+A while loop will only run its code *after* its' condition evaluates to true, while a repeat loop will run its code *before* checking to see if its condition evaluates to true.
+
+For example:
+
+```lua
+local myBool = false
+
+while myBool == true do
+  print("myBool is true")
+end
+```
+
+Nothing will print at all from this as the condition does not evaluate to true. However:
+
+```lua
+local myBool = false
+
+repeat
+  print("myBool is true")
+until myBool == false
+```
+
+This will print `"myBool is true"` once as the condition is evaluated after the code in the loop runs.
+
 # The For Loop
 
 A **for loop** is a loop that runs a certain amount of times. Here's an example:
